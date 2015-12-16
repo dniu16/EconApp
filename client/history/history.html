@@ -1,0 +1,27 @@
+<template name = "history">
+	{{>navigation}}
+	<div class="container">
+	<h2>History</h2>
+	<button class="delete">Reset</button>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Price</th>
+				<th>Quantity</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each player}}
+			<tr class="player {{isSelected}}">
+				<td>{{name}}</td>
+				<td>{{price}}</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+
+	</div>
+
+
+	
+</template>
